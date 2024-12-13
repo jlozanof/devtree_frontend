@@ -11,8 +11,8 @@ export default function LoginView() {
   const navigate = useNavigate();
 
   const initialtValues: LoginForm = {
-    email: "joel@joel.com",
-    password: "12345678",
+    email: "",
+    password: "",
   };
   const {
     register,
