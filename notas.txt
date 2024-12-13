@@ -1,0 +1,33 @@
+frontend
+1-- libraria de validaciones
+npm i express-validator
+
+
+2 frontend -- para comunicar front con back y enviar datos del formulario
+-- usa fetch API
+npm i axios
+
+Mostrar mensajes en pantalla
+3.- npm install sonner
+
+4.- ## dependencia para iconos
+npm i @heroicons/react 
+
+5- 
+npm i -D @tailwindcss/forms
+
+6 .- par manejar los autenticacion, el token.
+npm i @tanstack/react-query
+npm i @tanstack/react-query-devtools   --permite revisar los resultados de las consultas
+
+
+7  shwith qie muestra un botoncito para habilitar o desablitar
+npm install @headlessui/react
+
+8 librerias para trabajar con drag and drop
+ npm i @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities
+
+
+9  slug para react convertir palabras a una sola palabra
+
+npm i react-slugify
