@@ -120,7 +120,7 @@ export default function ProfileView() {
 
       <input
         type="submit"
-        className="bg-cyan-400 p-2 text-lg w-full uppercase text-slate-600 rounded-lg font-bold cursor-pointer"
+        className="bg-cyan-400 p-2 text-lg w-full uppercase text-slate-950 rounded-lg font-bold cursor-pointer"
         value="Guardar Cambios"
       />
     </form>

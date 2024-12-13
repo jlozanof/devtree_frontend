@@ -31,7 +31,7 @@ export default function SearchForm() {
   return (
     <form onSubmit={handleSubmit(handleSearch)} className="space-y-5">
       <div className="relative flex items-center  bg-white  px-2">
-        <label htmlFor="handle">joellozano.com/</label>
+        <label htmlFor="handle">ultimatelink.netlify.app/</label>
         <input
           type="text"
           id="handle"
@@ -65,8 +65,8 @@ export default function SearchForm() {
 
       <input
         type="submit"
-        className="bg-cyan-400 p-3 text-lg w-full uppercase text-pretty rounded-lg font-bold cursor-pointer"
-        value="Obtener mi DevTree"
+        className="bg-cyan-400 p-3 text-lg w-full uppercase text-pretty rounded-lg font-bold cursor-pointer text-slate-950"
+        value="Obtener mi DevTree Aquí"
       />
     </form>
   );

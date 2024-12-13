@@ -52,7 +52,7 @@ export default function LoginView() {
         noValidate
       >
         <div className="grid grid-cols-1 space-y-3">
-          <label htmlFor="email" className="text-2xl text-slate-500">
+          <label htmlFor="email" className="text-2xl text-slate-800">
             E-mail
           </label>
           <input
@@ -71,7 +71,7 @@ export default function LoginView() {
           {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
         </div>
         <div className="grid grid-cols-1 space-y-3">
-          <label htmlFor="password" className="text-2xl text-slate-500">
+          <label htmlFor="password" className="text-2xl text-slate-800">
             Password
           </label>
           <input
@@ -90,13 +90,13 @@ export default function LoginView() {
 
         <input
           type="submit"
-          className="bg-cyan-400 p-3 text-lg w-full uppercase text-slate-600 rounded-lg font-bold cursor-pointer"
+          className="bg-cyan-400 p-3 text-lg w-full uppercase text-slate-950 rounded-lg font-bold cursor-pointer"
           value="Iniciar Sesión"
         />
       </form>
       <nav className=" mt-10  text-white">
         <Link className="text-center text-lg block" to="/auth/register">
-          No tienes cuenta? Crea una cuenta aqui
+          No tienes cuenta? Crea una cuenta aquí
         </Link>
       </nav>
     </>

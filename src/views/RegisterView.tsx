@@ -59,10 +59,10 @@ export default function RegisterView() {
 
       <form
         onSubmit={handleSubmit(handleRegister)}
-        className="bg-white px-5 py-20 rounded-lg space-y-10 mt-10"
+        className="bg-white px-5 py-10  rounded-lg space-y-10 mt-10"
       >
         <div className="grid grid-cols-1 space-y-3">
-          <label htmlFor="name" className="text-2xl text-slate-500">
+          <label htmlFor="name" className="text-2xl text-slate-800">
             Nombre
           </label>
           <input
@@ -76,14 +76,14 @@ export default function RegisterView() {
           {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
         </div>
         <div className="grid grid-cols-1 space-y-3">
-          <label htmlFor="email" className="text-2xl text-slate-500">
+          <label htmlFor="email" className="text-2xl text-slate-800">
             E-mail
           </label>
           <input
             id="email"
             type="email"
             placeholder="Email de Registro"
-            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+            className="bg-slate-100 border-none p-3 rounded-lg text-slate-800 placeholder-slate-400"
             //email es el valor que configuramos en la api
             {...register("email", {
               required: "El Email es Obligatorio",
@@ -96,14 +96,14 @@ export default function RegisterView() {
           {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
         </div>
         <div className="grid grid-cols-1 space-y-3">
-          <label htmlFor="handle" className="text-2xl text-slate-500">
+          <label htmlFor="handle" className="text-2xl text-slate-800">
             Handle
           </label>
           <input
             id="handle"
             type="text"
             placeholder="Nombre de usuario: sin espacios"
-            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+            className="bg-slate-100 border-none p-3 rounded-lg text-slate-800 placeholder-slate-400"
             //handle es el campo que espera la api
             {...register("handle", { required: "El Handle es Obligatorio" })}
           />
@@ -112,14 +112,14 @@ export default function RegisterView() {
           )}
         </div>
         <div className="grid grid-cols-1 space-y-3">
-          <label htmlFor="password" className="text-2xl text-slate-500">
+          <label htmlFor="password" className="text-2xl text-slate-800">
             Password
           </label>
           <input
             id="password"
             type="password"
             placeholder="Password de Registro"
-            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+            className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400  text-slate-800"
             {...register("password", {
               required: "El Password es Obligatorio",
               minLength: {
@@ -134,7 +134,7 @@ export default function RegisterView() {
         </div>
 
         <div className="grid grid-cols-1 space-y-3">
-          <label htmlFor=" " className="text-2xl text-slate-500">
+          <label htmlFor=" " className="text-2xl text-slate-800">
             Repetir Password
           </label>
           <input
@@ -155,7 +155,7 @@ export default function RegisterView() {
 
         <input
           type="submit"
-          className=" bg-green-500 p-3 text-lg w-full uppercase text-slate-600 rounded-lg font-bold cursor-pointer"
+          className=" bg-green-500 p-3 text-lg w-full uppercase text-slate-900 rounded-lg font-bold cursor-pointer"
           value="Crear Cuenta"
         />
       </form>
