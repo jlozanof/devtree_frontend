@@ -71,7 +71,7 @@ export default function DevTree({ data }: DevTreeProps) {
               Visitar Mi Perfil: /{data.name}
             </Link>
           </div>
-
+          console.log(data)
           <div className="flex flex-col md:flex-row gap-10 mt-10">
             <div className="flex-1">
               <Outlet />
